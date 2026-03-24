@@ -29,25 +29,69 @@ This skill translates technical concepts into plain language with analogies anyo
 - Why should anyone care?
 - What's the real-world impact?
 
-### Step 2: Find the Analogy
+### Step 2: Build the Analogy
 
-Good analogies connect to universal experiences:
+**The Analogy Generation Formula:**
 
-| Technical Domain | Relatable Analogy Pool |
-|------------------|------------------------|
-| Software | Kitchen, mail, traffic, buildings |
-| Finance | Household budget, shopping |
-| Data | Library, filing cabinet, recipe |
-| Networks | Roads, plumbing, postal system |
-| Security | Locks, guards, identification |
-| AI | Assistants, interns, pattern recognition |
+```
+[Technical Thing] is like [Everyday Thing] because [Shared Property].
+```
 
-### Step 3: Test the Translation
+**How to generate analogies for ANYTHING:**
 
-**The "Mom Test":**
-- Would she nod or look confused?
-- Could she explain it to someone else?
-- Does it create the right mental picture?
+1. **List the key properties** of the technical thing (3 max)
+2. **Find something in daily life** with the same properties
+3. **Map the relationship**, not the object
+
+| Technical Thing | Key Property | Daily Life Equivalent |
+|-----------------|--------------|----------------------|
+| API | Intermediary that takes requests | Waiter |
+| Cache | Stores frequently used items nearby | Kitchen counter |
+| Encryption | Transforms to unreadable, reversible | Secret language with friend |
+| Load Balancer | Distributes work evenly | Airport check-in lines |
+| Recursion | Thing that calls itself | Russian nesting dolls |
+| Version Control | Track all changes, go back anytime | Google Docs history |
+
+**The Formula in Action:**
+
+> "What's a CDN?"
+
+1. Key property: Copies of content stored in many locations closer to users
+2. Daily life equivalent: Chain stores vs. single store
+3. Map it:
+
+> "It's like how Starbucks has locations everywhere instead of one giant store downtown. Instead of everyone traveling far to the one location, there's a copy near you. CDN does that for websites — copies of the content stored around the world so it loads faster."
+
+### Step 3: Calibrate to Audience
+
+**Different listeners need different depth:**
+
+| Audience | Goal | Approach |
+|----------|------|----------|
+| **5-year-old** | Wonder, not accuracy | Magic + simple cause/effect |
+| **Mom (60+)** | General understanding | Household analogies, skip "why" |
+| **Non-tech colleague** | Enough to collaborate | Business impact, light mechanics |
+| **Client** | Trust your expertise | Outcome focus, minimal jargon |
+| **Curious friend** | Real understanding | Can go deeper, check interest |
+
+**Calibration questions:**
+- Do they actually want to understand, or just making conversation?
+- Will they need to explain this to someone else?
+- How much time do I have? (30 sec vs 5 min)
+
+### Step 4: The Second-Hand Test
+
+**Success = they can re-explain it.**
+
+> "So mom, if Auntie asks what I do, what would you tell her?"
+
+If she can say it back in her own words → you succeeded.
+If she says "something with computers" → try again.
+
+**Why this works:**
+- Forces you to be simple enough to transfer
+- Reveals what actually stuck
+- Catches jargon that slipped through
 
 ## Translation Examples
 
@@ -182,6 +226,61 @@ I'm the one who gets the call."
 "Make this jargon-free: [text]"
 ```
 
+## Common Failures (and Fixes)
+
+### Failure 1: The Jargon Swap
+
+**What happens:** Replace one jargon with another.
+
+❌ "A container is like a virtual machine but lighter"
+✅ "A container is like a lunchbox — it has everything the app needs to run, packaged together, so you can move it anywhere"
+
+**Why it fails:** "Virtual machine" means nothing to mom.
+**Fix:** Every term in your analogy must be everyday words.
+
+### Failure 2: The Accuracy Trap
+
+**What happens:** So worried about being precise that you add caveats.
+
+❌ "Well, it's KIND of like a library, but not exactly, because actually the data isn't really stored that way, and there are indices, and..."
+✅ "It's like a library. Good enough."
+
+**Why it fails:** Caveats confuse. Precision is for experts.
+**Fix:** Accept that analogies are imperfect. Directionally correct > technically precise.
+
+### Failure 3: The Multi-Metaphor Pileup
+
+**What happens:** Stack multiple analogies hoping one lands.
+
+❌ "It's like a waiter, but also like a translator, and kind of like a phone operator..."
+✅ "It's like a waiter. You tell the waiter what you want, they go get it."
+
+**Why it fails:** Multiple metaphors create confusion, not clarity.
+**Fix:** One analogy. Commit to it.
+
+### Failure 4: The "Let Me Start From The Beginning"
+
+**What happens:** Explain all prerequisites before the actual thing.
+
+❌ "So first you need to understand how the internet works, and then TCP/IP, and then..."
+✅ "You know how you send a text? This makes sure it gets to the right person."
+
+**Why it fails:** They asked about one thing, not a CS degree.
+**Fix:** Answer the question. Add background only if they ask.
+
+### Failure 5: Missing the Real Question
+
+**What happens:** Explain the thing, but not what they actually wanted to know.
+
+Mom: "What do you do at work?"
+❌ [10-minute explanation of Kubernetes]
+✅ "I help keep websites running so they don't crash. Like a building maintenance person, but for the internet."
+
+**Why it fails:** They wanted to understand your life, not your tech stack.
+**Fix:** Answer the underlying question. Usually it's "should I be proud?" (yes) or "is this a real job?" (yes).
+
+---
+
 ## Anti-Patterns
 
 | ❌ Don't | ✅ Do Instead |
@@ -191,6 +290,8 @@ I'm the one who gets the call."
 | Say "it's complicated" | Find a simpler analogy |
 | Explain HOW it works | Explain WHAT it does and WHY it matters |
 | Use analogies that require tech knowledge | Use household/everyday analogies |
+| Stack multiple metaphors | One analogy, commit to it |
+| Add caveats for precision | Accept imperfect but clear |
 
 ## Response Principles
 

@@ -80,19 +80,31 @@ git clone https://github.com/mcltyl/explain-like-mom-skills.git ~/.openclaw/skil
 
 ---
 
-## The Framework
+## The Analogy Formula
+
+**Generate analogies for anything:**
 
 ```
-Technical Explanation
-        ↓
-Ask: What does it DO? Why care?
-        ↓
-Find analogy from everyday life
-        ↓
-Test: Would mom understand?
-        ↓
-Plain Language Output
+[Technical Thing] is like [Everyday Thing] because [Shared Property]
 ```
+
+1. **List key properties** (3 max)
+2. **Find daily life equivalent**
+3. **Map the relationship, not the object**
+
+**Example:**
+> "A CDN is like Starbucks having locations everywhere instead of one giant store downtown — copies closer to you so it's faster."
+
+---
+
+## The Second-Hand Test
+
+**Success = they can re-explain it.**
+
+> "So mom, if Auntie asks what I do, what would you tell her?"
+
+If she can say it back → you succeeded.
+If she says "something with computers" → try again.
 
 ---
 
