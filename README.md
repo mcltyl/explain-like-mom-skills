@@ -25,17 +25,17 @@ Works with Claude Code, Codex CLI, OpenClaw, and any Agent Skills-compatible too
 
 ### npx skills
 ```bash
-npx skills add git@github.com:mcltyl/explain-like-mom.git
+npx skills add git@github.com:mcltyl/explain-like-mom-skills.git
 ```
 
 ### Claude Code / Codex CLI
 ```bash
-git clone https://github.com/mcltyl/explain-like-mom.git ~/.claude/skills/explain-like-mom
+git clone https://github.com/mcltyl/explain-like-mom-skills.git ~/.claude/skills/explain-like-mom
 ```
 
 ### OpenClaw
 ```bash
-git clone https://github.com/mcltyl/explain-like-mom.git ~/.openclaw/skills/explain-like-mom
+git clone https://github.com/mcltyl/explain-like-mom-skills.git ~/.openclaw/skills/explain-like-mom
 ```
 
 ---
