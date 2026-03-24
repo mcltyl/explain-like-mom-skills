@@ -132,6 +132,18 @@ If she says "something with computers" → try again.
 
 ---
 
+## Common Failures
+
+| Failure | Example | Fix |
+|---------|---------|-----|
+| **Jargon Swap** | "A container is like a VM" | VM means nothing to mom |
+| **Accuracy Trap** | "Well, KIND of like..." | Accept imperfect but clear |
+| **Multi-Metaphor** | "Like a waiter AND translator AND..." | One analogy, commit |
+| **Prerequisite Dump** | "First you need to understand TCP/IP..." | Answer the question |
+| **Missing Real Question** | 10-min Kubernetes explanation | They asked if it's a real job |
+
+---
+
 ## The Mom Test
 
 Before any explanation, ask:
